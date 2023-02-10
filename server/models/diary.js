@@ -23,7 +23,7 @@ class Entry {
 
 
     static async getAll() {
-        const q = {text: "SELECT * FROM entries;"};
+        const q = {text: "SELECT * FROM entries ORDER BY entry_date;"};
         const res = await this.query(q);
         return res.rows.map(e => new Entry(e));
     }
