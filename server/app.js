@@ -15,6 +15,6 @@ app.get('/', (req, res) => {
 
 
 
-// app.use("/diaries", diaryRouter);
+app.use("/diary", diaryRouter);
 
 module.exports = app;
