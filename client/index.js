@@ -28,3 +28,6 @@ function createDiaryCard() {
 }
 
 createDiaryCard();
+createDiaryCard();
+createDiaryCard();
+
