@@ -11,7 +11,7 @@
 <body>
     <h1>New Diary Entry</h1>
     <a href="../index.html">Back to Diary</a>
-    <form onsubmit="handleSubmit()">
+    <form>
         <label for="title">Entry Title</label>
         <input type="text" id="title" name="title">
         <label for="date">Date</label>
@@ -20,6 +20,8 @@
         <input type="text" id="image_url" name="image_url">
         <label for="content">Content</label>
         <textarea id="content" name="content"></textarea>
+        <label for="category">Category</label>
+        <input type="text" id="category" name="category">
         <input type="submit" value="Submit">
     </form>
 </body>
