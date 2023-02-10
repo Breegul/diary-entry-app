@@ -1,6 +1,18 @@
 body {
     
 }
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    border-radius: 5px;
+}
 .diary-card {
     background-color: #fff;
     border: 1px solid #ccc;
@@ -10,7 +22,6 @@ body {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -38,6 +49,4 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
-    justify-content: flex-start;
-    align-items: flex-start;
 }
