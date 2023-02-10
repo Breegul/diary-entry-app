@@ -9,7 +9,7 @@ function createDiaryCard() {
 
     const image = document.createElement('img');
     image.classList.add('diary-image');
-    image.src = "https://placekitten.com/200/300";
+    image.src = "https://placekitten.com/3000/2000";
 
     const content = document.createElement('p');
     content.classList.add('diary-content');

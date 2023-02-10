@@ -21,3 +21,23 @@ body {
     padding: 0;
 }
 
+.diary-image{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin: 10px 0;
+}
+
+.diary-content{
+
+}
+
+.diary-date{
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
