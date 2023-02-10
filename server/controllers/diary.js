@@ -11,7 +11,7 @@ async function create (req, res) {
     const body = req.body;
     try{
         // check for all required elements
-        if(["id", "date", "title", "category", "entry"].every(d => Object.hasOwn(body, d))){
+        if(["date", "title", "category", "image_url", "diary_entry"].every(d => Object.hasOwn(body, d))){
             const diary = await Diary.create(body);
             res.status(201).json(diary);
         }else{
