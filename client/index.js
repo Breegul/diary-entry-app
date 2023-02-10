@@ -9,11 +9,11 @@ async function createDiaryCard(data) {
   
     const image = document.createElement('img');
     image.classList.add('diary-image');
-    image.src = data.image_url;
+    image.src = data.image;
   
     const content = document.createElement('p');
     content.classList.add('diary-content');
-    content.innerText = data.content;
+    content.innerText = data.entry;
   
     const date = document.createElement('p');
     date.classList.add('diary-date');
