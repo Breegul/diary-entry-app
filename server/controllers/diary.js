@@ -11,7 +11,7 @@ async function create (req, res) {
     const body = req.body;
     try{
         // check for all required elements
-        if(["id", "date", "title", "category", "entry"].every(d => Object.hasOwn(body, d)))
+        //if(["id", "date", "title", "category", "entry"].every(d => Object.hasOwn(body, d)))
 
     }catch(err){
         console.log(err.message);
