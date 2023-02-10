@@ -28,7 +28,7 @@ async function handleSubmit(e) {
 }
 
 function handleSubmitTest(){
-    console.log(works)
+    console.log("works")
 }
 
 console.log("javascript")
