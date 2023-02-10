@@ -1,18 +1,20 @@
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
 const diaryRouter = require("./routers/diary");
 
 const app = express();
 
-app.use(cors());
 app.use(express.json());
+app.use(cors());
+app.use("/", express.static(path.join(__dirname, "..", "client")));
 
-// TODO serve index.html on /
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, "..", "client", "index.html"));
+})
 
-app.get("/", (req, res)=> {
-    res.json({message: "Welcome to diary API"})
-});
 
-app.use("/diaries", diaryRouter);
+
+// app.use("/diaries", diaryRouter);
 
 module.exports = app;
