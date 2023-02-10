@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
-const diaryRouter = require("./routers/diary");
+//const diaryRouter = require("./routers/diary");
 
 const app = express();
 
