@@ -17,7 +17,7 @@ async function createDiaryCard(data) {
   
     const date = document.createElement('p');
     date.classList.add('diary-date');
-    date.innerText = data.date;
+    date.innerText = (new Date(data.date)).toDateString();
   
     card.appendChild(title);
     card.appendChild(image);
